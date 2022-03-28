@@ -1,8 +1,6 @@
 const axios = require('axios')
-
+const LINK = 'http://universities.hipolabs.com/search?country=';
 exports.getAllUniversitiesSer = async function (pays) {
-
-    const LINK = 'http://universities.hipolabs.com/search?country=';
     try {
 
         const universities = await axios.get(LINK + pays)
@@ -15,7 +13,3 @@ exports.getAllUniversitiesSer = async function (pays) {
     }
 
 }
-
-
-
-
